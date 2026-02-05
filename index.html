@@ -8,7 +8,7 @@
   <style>
     :root {
       --primary: #2E8B8B;
-      --secondary: #abd0d0;
+      --secondary: #f3f8f8;
       --text-dark: #1f2937;
       --text-light: #6b7280;
       --card-bg: #ffffff;
@@ -25,10 +25,13 @@
       background: var(--secondary);
       color: var(--text-dark);
       line-height: 1.6;
+      padding-bottom: 124px;
+      overscroll-behavior: none;
+      -webkit-overflow-scrolling: touch;
     }
 
     header {
-      background: linear-gradient(135deg, var(--primary), #27b087);
+      background: linear-gradient(135deg, var(--primary), #3aa5a5);
       color: #fff;
       padding: 24px 20px;
       border-bottom-left-radius: 20px;
@@ -87,12 +90,17 @@
 
     .badge {
       display: inline-block;
-      background: rgba(31, 143, 106, 0.1);
+      background: rgba(46, 139, 139, 0.12);
       color: var(--primary);
       padding: 4px 10px;
       border-radius: 20px;
       font-size: 12px;
       margin-top: 8px;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
     }
 
     .contact {
@@ -101,6 +109,7 @@
       padding: 18px;
       border-radius: 16px;
       text-align: center;
+      margin-top: 24px;
     }
 
     .contact p {
@@ -126,14 +135,10 @@
       font-size: 12px;
       color: var(--text-light);
     }
-
-    body {
-      padding-bottom: 140px;
-    }
   </style>
 </head>
 
-<body class="body">
+<body>
 
 <header>
   <h1>Advertise With Us</h1>
@@ -180,24 +185,56 @@
     <p class="badge">30 Country • 30 State • 30 Local</p>
   </div>
 
+  <!-- SPONSOR SECTION -->
+  <div class="card highlight">
+    <h2>⭐ Become a Sponsor</h2>
+    <p>
+      Sponsors receive premium visibility across key areas of the app, ensuring
+      consistent brand presence and recognition.
+    </p>
+
+    <ul class="list">
+      <li>
+        A <strong>dedicated sponsor tile</strong> will be displayed on the home screen
+        among utility sections, showcasing your brand image.
+      </li>
+      <li>
+        Your <strong>sponsor name</strong> will be shown in Salah time and schedule
+        reminder notifications.
+      </li>
+      <li>
+        If provided, a <strong>notification icon URL</strong> will be used to display
+        a small sponsor icon within notifications.
+      </li>
+      <li>
+        Sponsorship duration is flexible and can be selected for
+        <strong>multiple months</strong> (1, 2, 3 or more).
+      </li>
+      <li>
+        Start and end dates are fully configurable based on your campaign needs.
+      </li>
+    </ul>
+  </div>
+
   <div class="card">
     <h2>🛡 Content Policy</h2>
     <p>
-      To ensure a positive experience for all users, advertisements must comply with
-      our content and quality guidelines. Restricted or non-compliant products or
-      services are not supported. Final approval is subject to review.
+      To maintain a positive and trusted experience for users, all advertisements
+      and sponsorships must comply with our content and quality guidelines.
+      Restricted or non-compliant products or services are not supported.
+      Final approval is subject to internal review.
     </p>
   </div>
 
   <div class="contact">
-    <p>Interested in advertising with us?</p>
+    <p>Interested in advertising or becoming a sponsor?</p>
     <a class="email" href="mailto:xxx@xx.com">Contact: xxx@xx.com</a>
   </div>
 
 </div>
 
 <footer>
-  © 2026 • Advertising Information
+  © 2026 • Advertising & Sponsorship Information
 </footer>
 
 </body>
