@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advertise With Us</title>
+  <title>Advertise & Sponsor With Us</title>
 
   <style>
     :root {
       --primary: #2E8B8B;
-      --secondary: #f3f8f8;
+      --secondary: #f3f9f9;
       --text-dark: #1f2937;
       --text-light: #6b7280;
       --card-bg: #ffffff;
@@ -33,9 +33,9 @@
     header {
       background: linear-gradient(135deg, var(--primary), #3aa5a5);
       color: #fff;
-      padding: 24px 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      padding: 26px 20px;
+      border-bottom-left-radius: 22px;
+      border-bottom-right-radius: 22px;
     }
 
     header h1 {
@@ -57,7 +57,7 @@
 
     .card {
       background: var(--card-bg);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 16px;
       margin-bottom: 16px;
       border: 1px solid var(--border);
@@ -85,35 +85,35 @@
     }
 
     .list li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .badge {
       display: inline-block;
       background: rgba(46, 139, 139, 0.12);
       color: var(--primary);
-      padding: 4px 10px;
+      padding: 5px 12px;
       border-radius: 20px;
       font-size: 12px;
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     .highlight {
       border-left: 4px solid var(--primary);
-      padding-left: 12px;
+      background: #ffffff;
     }
 
     .contact {
       background: var(--primary);
       color: #fff;
-      padding: 18px;
-      border-radius: 16px;
+      padding: 20px;
+      border-radius: 18px;
       text-align: center;
-      margin-top: 24px;
+      margin-top: 28px;
     }
 
     .contact p {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       font-size: 14px;
       opacity: 0.95;
     }
@@ -122,8 +122,8 @@
       display: inline-block;
       background: #fff;
       color: var(--primary);
-      padding: 10px 16px;
-      border-radius: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
       font-weight: 600;
       text-decoration: none;
       font-size: 14px;
@@ -131,97 +131,186 @@
 
     footer {
       text-align: center;
-      padding: 14px;
+      padding: 16px;
       font-size: 12px;
       color: var(--text-light);
     }
+
+    /* PREMIUM SPONSOR STYLING */
+.sponsor-card {
+  background: linear-gradient(
+    135deg,
+    #fff8e1,
+    #fffdf7
+  );
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #f1d48a;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.sponsor-card::before {
+  content: "PREMIUM";
+  position: absolute;
+  top: 14px;
+  right: -34px;
+  background: linear-gradient(135deg, #d4af37, #f3d27a);
+  color: #4a3b00;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 40px;
+  transform: rotate(45deg);
+}
+
+.sponsor-card h2 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7a5c00;
+}
+
+.sponsor-card p {
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+.sponsor-list {
+  margin-top: 12px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+.sponsor-list li {
+  margin-bottom: 8px;
+}
+
+.sponsor-badge {
+  display: inline-block;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #d4af37, #f3d27a);
+  color: #4a3b00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Advertise With Us</h1>
-  <p>Reach the right audience and grow your business with our in-app advertising solutions.</p>
+  <h1>Advertise & Sponsor With Us</h1>
+  <p>
+    Promote your brand inside our app and reach users in a meaningful,
+    non-intrusive way.
+  </p>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>📢 Supported Ad Formats</h2>
+    <h2>📢 Advertising Formats</h2>
     <ul class="list">
-      <li><strong>Banner Ads:</strong> Displayed at the bottom of the screen and refreshed every 5 seconds.</li>
-      <li><strong>Full Screen Ads:</strong> Shown once every 2 minutes while the app is active.</li>
-      <li><strong>Notification Ads:</strong> Delivered with title, message, and image (country level only).</li>
+      <li>
+        <strong>Banner Ads</strong>  
+        <br />Small banners shown at the bottom of the screen. Banners rotate every 5 seconds.
+      </li>
+      <li>
+        <strong>Full Screen Ads</strong>  
+        <br />High-visibility image ads displayed once every 2 minutes while the app is active.
+      </li>
+      <li>
+        <strong>Notification Ads</strong>  
+        <br />Notifications with title, message, and image (currently country-level only).
+      </li>
     </ul>
   </div>
 
   <div class="card">
     <h2>📍 Targeting Options</h2>
     <ul class="list">
-      <li><strong>Country Level:</strong> Visible to all users in a selected country.</li>
-      <li><strong>State Level:</strong> Visible to users in a selected state.</li>
-      <li><strong>Local Level:</strong> Target users within a custom radius using location coordinates.</li>
+      <li><strong>Country Level:</strong> Reach users across an entire country</li>
+      <li><strong>State Level:</strong> Target users within a specific state</li>
+      <li><strong>Local Level:</strong> Target users within a selected radius from a location</li>
     </ul>
-    <span class="badge">Banner & Full Screen Ads</span>
+    <span class="badge">Available for Banner & Full Screen Ads</span>
   </div>
 
   <div class="card">
-    <h2>🖱 Ad Interaction</h2>
+    <h2>🖱 Ad Click Actions</h2>
     <p>
-      When users tap on a banner or full screen ad, you can either open a website URL
-      or display a custom in-app message.
+      When users tap on a banner or full screen ad, you can choose to:
+      open your website, or display a custom message inside the app.
     </p>
   </div>
 
   <div class="card">
     <h2>📅 Scheduling & Availability</h2>
     <ul class="list">
-      <li>Ads are updated once per month</li>
+      <li>Ads are managed on a monthly cycle</li>
       <li>Each ad can run for up to one month</li>
       <li>Flexible start and end dates within the month</li>
-      <li>First-come, first-served basis</li>
+      <li>Limited ad slots, served on a first-come basis</li>
+      <li>
+        Total availability per month:
+        <strong>100 Banner Ads</strong> and
+        <strong>20 Full Screen Ads</strong>
+      </li>
     </ul>
-    <p class="badge">30 Country • 30 State • 30 Local</p>
+    <p class="badge">Limits apply across all targeting levels</p>
+    <span class="badge">100 Banner Ads • 20 Full Screen Ads</span>
   </div>
 
   <!-- SPONSOR SECTION -->
-  <div class="card highlight">
-    <h2>⭐ Become a Sponsor</h2>
+  <div class="sponsor-card">
+    <h2>👑 Become a Sponsor</h2>
     <p>
-      Sponsors receive premium visibility across key areas of the app, ensuring
-      consistent brand presence and recognition.
+      Sponsorship provides premium, long-term brand visibility
+      across key areas of the app, helping your brand stay
+      top-of-mind with users.
     </p>
 
-    <ul class="list">
+    <ul class="sponsor-list">
       <li>
-        A <strong>dedicated sponsor tile</strong> will be displayed on the home screen
-        among utility sections, showcasing your brand image.
+        A <strong>dedicated sponsor tile</strong> on the home screen,
+        highlighting your brand image.
       </li>
       <li>
-        Your <strong>sponsor name</strong> will be shown in Salah time and schedule
+        Your <strong>sponsor name</strong> shown in Salah time and
         reminder notifications.
       </li>
       <li>
-        If provided, a <strong>notification icon URL</strong> will be used to display
-        a small sponsor icon within notifications.
+        Optional <strong>small sponsor icon</strong> displayed inside
+        notifications.
       </li>
       <li>
-        Sponsorship duration is flexible and can be selected for
-        <strong>multiple months</strong> (1, 2, 3 or more).
+        A <strong>large brand image</strong> displayed in reminder
+        notifications for maximum impact.
       </li>
       <li>
-        Start and end dates are fully configurable based on your campaign needs.
+        Flexible sponsorship duration —
+        <strong>1, 2, 3 or more months</strong>.
+      </li>
+      <li>
+        Fully customizable <strong>start and end dates</strong>.
       </li>
     </ul>
+
+    <span class="sponsor-badge">Premium Sponsorship</span>
   </div>
 
   <div class="card">
-    <h2>🛡 Content Policy</h2>
+    <h2>🛡 Content & Quality Guidelines</h2>
     <p>
-      To maintain a positive and trusted experience for users, all advertisements
-      and sponsorships must comply with our content and quality guidelines.
-      Restricted or non-compliant products or services are not supported.
+      All advertisements and sponsorships must meet our content and quality standards.
+      Promotions related to restricted or non-compliant products or services are not supported.
       Final approval is subject to internal review.
     </p>
   </div>
